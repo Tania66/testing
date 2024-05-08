@@ -1,0 +1,39 @@
+@import url('normalize.css');
+
+
+code {
+  font-family: 'Inter', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0px;
+padding: 0px;
+}
+
+ul {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+a {
+text-decoration: none;
+cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+:where(abbr[title]) {
+  text-decoration: none;
+
+}
