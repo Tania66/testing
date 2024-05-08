@@ -25,7 +25,7 @@ import {
   Stars,
   TopAdvertContent,
 } from "./AdvertsList.styled";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import use from "../../assets/icon/users.svg";
 import automat from "../../assets/icon/automatic.svg";
 import petr from "../../assets/icon/petrol.svg";
@@ -49,7 +49,7 @@ const AdvertsList = () => {
   const favorite = useSelector(selectFavoriteAdverts);
   const dispatch = useDispatch();
   const { openModal } = useContext(ModalContext);
-  const [isFavorite, setFavorite] = useState(false);
+
 
 const handleClickFavorite = (id) =>{
   const data = favorite.find(item => item.id === id);
@@ -58,7 +58,6 @@ const handleClickFavorite = (id) =>{
     return
   }
   dispatch(fetchAdvertsById(id));
-  setFavorite(true)
 }
 
 
