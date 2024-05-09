@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectAdverts, selectFavoriteAdverts } from "../../redux/adverts/advertsSelectors";
 import { FaRegHeart } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
+import { Report } from 'notiflix/build/notiflix-report-aio';
 import {
   AdvertContent,
   AdvertItem,
@@ -54,7 +55,7 @@ const AdvertsList = () => {
 const handleClickFavorite = (id) =>{
   const data = favorite.find(item => item.id === id);
   if(data){
-    alert ("Alreade add to favorite");
+    Report.failure("Already added to favorite");
     return
   }
   dispatch(fetchAdvertsById(id));

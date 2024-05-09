@@ -9,6 +9,7 @@ import Loader from "../../components/Loader/Loader";
 import AdvertsList from "../../components/AdvertsList/AdvertsList";
 import { LoadMore } from "./Catalog.styled";
 import SideBar from "../../components/SideBar/SideBar";
+import NotFound from "../../components/NotFound/NotFound";
 
 
 
@@ -39,7 +40,7 @@ const Catalog = () => {
       </div>
       <div>
               {isLoading && <Loader />}
-      {adverts.length > 0 ? <AdvertsList /> : <>Not found</>}
+      {adverts.length > 0 ? <AdvertsList /> : <NotFound/>}
 
       {adverts.length > 1 && (
         <LoadMore onClick={onLoadMore}>Load more</LoadMore>

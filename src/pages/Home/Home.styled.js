@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import bg from "../../assets/camperVan.png";
+import bg from "../../assets/van.png";
 import { NavLink } from "react-router-dom";
 
 export const HomeInner = styled.div`
   padding-top: 100px;
-  padding-bottom: 250px;
+  padding-bottom: 230px;
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-position: right -98px bottom -130px;
-  background-size: cover;
+  background-position: right 180px bottom 60px;
+  background-size: contain;
 `;
 
 export const SupTitle = styled.p`
