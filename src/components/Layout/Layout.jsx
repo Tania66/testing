@@ -1,7 +1,8 @@
 import { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import logo from "../../assets/icon/camper.svg";
-import { Container, Header, HeaderLink,Link } from "./Layout.styled";
+import { Container, Header, HeaderLink,Link, LogoImg } from "./Layout.styled";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const Layout = () => {
   const camper = logo;
@@ -10,7 +11,7 @@ const Layout = () => {
       <Header>
         <div>
           <NavLink to="/" end>
-            <img src={camper} alt="camper" />
+            <LogoImg src={camper} alt="camper" />
           </NavLink>
         </div>
         <nav>
@@ -23,6 +24,7 @@ const Layout = () => {
             </li>
           </HeaderLink>
         </nav>
+        <BurgerMenu/>
       </Header>
 
       <Suspense fallback={null}>
