@@ -30,6 +30,7 @@ export const InnerBurgerMenu = styled.div`
   width: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
   visibility: ${({ isOpen }) => (isOpen ? "hidden" : "visible")};
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(-100%)" : "translateY(0)"};
@@ -78,7 +79,7 @@ export const ButtonBurgerMenu = styled.button`
   position: absolute;
   z-index: 10;
   top: 15px;
-  right: -8px;
+  right: -10px;
 `;
 
 export const ImgBurger = styled.img`

@@ -1,9 +1,7 @@
-import { Container } from "../../components/Layout/Layout.styled";
 import { GetStared, HomeInner, SpanTitle, SupTitle, Text, Title } from "./Home.styled";
 
 const Home = () => {
   return (
-    <Container>
       <HomeInner>
         <SupTitle>Good Thing Travel</SupTitle>
         <Title>
@@ -17,7 +15,6 @@ const Home = () => {
           </Text>
           <GetStared to="/catalog">Get Stared</GetStared>
       </HomeInner>
-    </Container>
   );
 };
 

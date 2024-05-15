@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const NotFoundContainer = styled.div`
-  padding: 90px 0 90px 0;
+  padding: 30px 0 45px 0;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,10 @@ export const NotFoundContainer = styled.div`
 export const Image = styled.img`
   width: 300px;
   height: 300px;
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    height: 350px;
+  }
 `;
 
 export const Text = styled.p`
